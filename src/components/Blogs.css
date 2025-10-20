@@ -1,0 +1,118 @@
+.blogs-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f2f2f2, #e6e9f0);
+  padding: 2rem;
+}
+
+/* Back button */
+.back-btn {
+  align-self: flex-start;
+  background-color: #6877f4;
+  color: #fff;
+  border: none;
+  border-radius: 1rem;
+  padding: 0.8rem 1.5rem;
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.back-btn:hover {
+  background-color: #4f63d1;
+}
+
+/* Box that contains left (image) + right (form) */
+.blogs-box {
+  display: flex;
+  flex-direction: row;
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  gap: 2rem;
+  width: 90%;
+  max-width: 900px;
+}
+
+.blogs-left img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Right side form */
+.blogs-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.blogs-right-form {
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+  background: #fff;
+}
+
+.blogs-right-form h2 {
+  font-family: "Comfortaa", sans-serif;
+  font-size: 2rem;
+  text-transform: uppercase;
+  background: linear-gradient(to right, #b88efc, #6877f4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+}
+
+.blogs-right-form input,
+.blogs-right-form textarea {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.file-upload {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.preview-image {
+  width: 150px;
+  height: auto;
+  border-radius: 0.5rem;
+  border: 1px solid #ccc;
+}
+
+.post-btn {
+  width: 100%;
+  max-width: 250px;
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  background: linear-gradient(to right, #b88efc, #6877f4);
+  color: #fff;
+  border: none;
+  border-radius: 3rem;
+  cursor: pointer;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.post-btn:hover {
+  transform: scale(1.05);
+}
